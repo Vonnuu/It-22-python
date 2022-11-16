@@ -1,12 +1,28 @@
 #karl robert masing
 
+#kuupaev
+def kuunimi(yt):
+    kuud=[ "","jaanuar","veebruar","märts","aprill","mai","juuni","juuli","august","september","oktoober","november","detsember"]
+    return kuud[yt]
+
+def kuupaev(ty):
+    print(f"{w}.{ty}.{r}. a")
+
+ewr=input("lisa kuupäev: ")
+w,e,r=ewr.split(".")
+kuupaev(kuunimi(int(e)))
+
 #mündid
-def mundid(qw):
-    
-    
-
-
-
+tri=[]
+lop=input("sisesta faili nimi: ")
+tre=open(lop)
+for i in tre:
+    tri.append(int(i.strip("\n"))) 
+def mundids(r):
+    for i in r:
+        r[:]=[x for x in r if x<=5]
+    print(f"Müntide summa on  {sum(r)}")
+mundids(tri)
 
 #Tervitused motisklustega
 def tervitus(s):
